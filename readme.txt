@@ -25,6 +25,10 @@ commnad 2: tail
 compilation:	 	gcc head.c	gcc tail.c
 		
 Run        :		./a.out { <file1> <file2> ... } [option] 
+
+Makefile   :		make head
+			make tail
+			make clean
 		
-help       :	./a.out helphead --h
-		./a.out helptail --h
+help       :		./a.out helphead --h
+			./a.out helptail --h
