@@ -1,0 +1,16 @@
+Usage: ./a.out [FILE]... [OPTION]...
+{ e.g.: ./a.out <filename> {<-n> / <-b> / <-h> / <-v>} }
+
+Print the first 10 lines of each FILE to standard output.
+With more than one FILE, precede each with a header giving the file name.
+
+When no FILE, read standard input.
+
+   -b, --byte=[-]NUM		print the first NUM bytes of each file;
+   -n, --lines=[-]NUM		print the first NUM lines instead of the first 10;
+   -q, --quiet, --silent	never print headers giving file names.
+   -v, --verbose		always print headers giving file names.
+   -z, --zero-terminated	line delimiter is NUL, not newline.
+
+        myhead --help		display this help and exit.
+
