@@ -6,3 +6,6 @@ tail: tail.c functions.h stack.c stack.h
 	cc tail.c -o tail
 tail.o: tail.c stack.c functions.h 
 	cc -c tail.c
+clean:
+	rm -rf *o head
+	rm -rf *o tail
